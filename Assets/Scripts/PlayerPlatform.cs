@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerPlatform : MonoBehaviour {
 
     public Transform deathTransform;
+    public Transform startPos;
 
     Rigidbody2D rb;
     public float speed;
@@ -21,12 +22,11 @@ public class PlayerPlatform : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Platforming();
+        DeathCheck();
 	}
 
     void Platforming()
-    {
-
-        
+    {        
         horiz = Input.GetAxis("Horizontal");
         vert = Input.GetAxis("Vertical");
 
@@ -38,5 +38,25 @@ public class PlayerPlatform : MonoBehaviour {
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
+    }
+
+
+    void DeathCheck()
+    {
+        if(transform.position.y < deathTransform.position.y)
+        {
+            //rb.velocity = new Vector2(0, 0);
+            Color c = new Color(1, 1, 1, 0);
+            GetComponent<SpriteRenderer>().color = c;
+            StartCoroutine(PlayerRespawn(0.5f));
+        }
+    }
+
+    IEnumerator PlayerRespawn(float t)
+    {
+        yield return new WaitForSeconds(t);
+        transform.position = startPos.position;
+        Color c = new Color(1, 1, 1, 1);
+        GetComponent<SpriteRenderer>().color = c;
     }
 }
