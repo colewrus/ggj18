@@ -39,6 +39,7 @@ public class Platform_manager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        /*
 		if(tick < timer)
         {
             tick += 1 * Time.deltaTime;
@@ -60,16 +61,16 @@ public class Platform_manager : MonoBehaviour {
                 else
                 {
                     PlatformList[i].TurnedOn = false;
-                    //PlatformList[i].obj.SetActive(false);
+                    
                     PlatformList[i].obj.GetComponent<Animator>().SetBool("startOff", true);
-                    //PlatformList[i].obj.GetComponent<Animator>().SetTrigger("platformOff");
+                    
                 }
 
             }
             
             tick = 0;
         }
-
+        */
 	}
 
 

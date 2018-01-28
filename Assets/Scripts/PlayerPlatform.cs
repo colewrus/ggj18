@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class PlayerPlatform : MonoBehaviour {
 
-    public enum PlatformType { disappear, trap}
-
-    public PlatformType myType;
     public Transform deathTransform;
     public Transform startPos;
 
@@ -16,6 +13,9 @@ public class PlayerPlatform : MonoBehaviour {
 
     float horiz;
     float vert;
+
+
+    public int health;
 
 	// Use this for initialization
 	void Start () {
@@ -61,5 +61,26 @@ public class PlayerPlatform : MonoBehaviour {
         transform.position = startPos.position;
         Color c = new Color(1, 1, 1, 1);
         GetComponent<SpriteRenderer>().color = c;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.transform.tag == "mover")
+        {
+            transform.parent = collision.transform;
+        }
+
+        if(collision.transform.tag == "bullet")
+        {
+            //you got hit
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if(collision.transform.tag == "mover")
+        {
+            transform.parent = null;
+        }
     }
 }

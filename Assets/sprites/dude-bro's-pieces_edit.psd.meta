@@ -1,27 +1,22 @@
 fileFormatVersion: 2
-guid: c9fa63a6305f2fc479b4c4813d9f76c7
-timeCreated: 1517104133
+guid: e3c56444f2592624cbcbd98b006af020
+timeCreated: 1517104844
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: dude-bro's-pieces_0
-    21300002: dude-bro's-pieces_1
-    21300004: dude-bro's-pieces_2
-    21300006: dude-bro's-pieces_3
-    21300008: dude-bro's-pieces_4
-    21300010: dude-bro's-pieces_5
-    21300012: dude-bro's-pieces_6
-    21300014: dude-bro's-pieces_7
-    21300016: dude-bro's-pieces_8
-    21300018: dude-bro's-pieces_9
-    21300020: dude-bro's-pieces_10
-    21300022: dude-bro's-pieces_11
-    21300024: dude-bro's-pieces_12
-    21300026: dude-bro's-pieces_13
-    21300028: dude-bro's-pieces_14
-    21300030: dude-bro's-pieces_15
-    21300032: dude-bro's-pieces_16
-    21300034: dude-bro's-pieces_17
+    21300000: dude-bro's-pieces_edit_0
+    21300002: dude-bro's-pieces_edit_1
+    21300004: dude-bro's-pieces_edit_2
+    21300006: dude-bro's-pieces_edit_3
+    21300008: dude-bro's-pieces_edit_4
+    21300010: dude-bro's-pieces_edit_5
+    21300012: dude-bro's-pieces_edit_6
+    21300014: dude-bro's-pieces_edit_7
+    21300016: dude-bro's-pieces_edit_8
+    21300018: dude-bro's-pieces_edit_9
+    21300020: dude-bro's-pieces_edit_10
+    21300022: dude-bro's-pieces_edit_11
+    21300024: dude-bro's-pieces_edit_12
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -94,16 +89,26 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dude-bro's-pieces_0
+      name: dude-bro's-pieces_edit_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 29
-        width: 17
+        x: 6
+        y: 244
+        width: 19
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -112,21 +117,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: dude-bro's-pieces_4
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 244
-        width: 17
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: dude-bro's-pieces_5
+      name: dude-bro's-pieces_edit_1
       rect:
         serializedVersion: 2
         x: 30
@@ -134,13 +125,27 @@ TextureImporter:
         width: 18
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: dude-bro's-pieces_6
+      name: dude-bro's-pieces_edit_2
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 234
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dude-bro's-pieces_edit_3
       rect:
         serializedVersion: 2
         x: 10
@@ -148,13 +153,13 @@ TextureImporter:
         width: 54
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: dude-bro's-pieces_7
+      name: dude-bro's-pieces_edit_4
       rect:
         serializedVersion: 2
         x: 8
@@ -162,69 +167,13 @@ TextureImporter:
         width: 48
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: dude-bro's-pieces_8
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 172
-        width: 48
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: dude-bro's-pieces_9
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 147
-        width: 48
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: dude-bro's-pieces_10
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 125
-        width: 53
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: dude-bro's-pieces_11
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 124
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: dude-bro's-pieces_12
+      name: dude-bro's-pieces_edit_5
       rect:
         serializedVersion: 2
         x: 64
@@ -232,55 +181,69 @@ TextureImporter:
         width: 72
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: dude-bro's-pieces_13
+      name: dude-bro's-pieces_edit_6
       rect:
         serializedVersion: 2
-        x: 150
-        y: 195
+        x: 8
+        y: 172
+        width: 48
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dude-bro's-pieces_edit_7
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 147
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dude-bro's-pieces_edit_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 125
         width: 53
-        height: 15
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: dude-bro's-pieces_14
+      name: dude-bro's-pieces_edit_9
       rect:
         serializedVersion: 2
-        x: 150
-        y: 178
-        width: 53
-        height: 15
+        x: 77
+        y: 124
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: dude-bro's-pieces_15
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 234
-        width: 59
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: dude-bro's-pieces_16
+      name: dude-bro's-pieces_edit_10
       rect:
         serializedVersion: 2
         x: 121
@@ -288,19 +251,33 @@ TextureImporter:
         width: 13
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: dude-bro's-pieces_17
+      name: dude-bro's-pieces_edit_11
       rect:
         serializedVersion: 2
         x: 104
         y: 100
         width: 8
         height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dude-bro's-pieces_edit_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 147
+        width: 24
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
