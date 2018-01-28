@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerPlatform : MonoBehaviour {
 
@@ -63,16 +64,29 @@ public class PlayerPlatform : MonoBehaviour {
         GetComponent<SpriteRenderer>().color = c;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.name == "win")
+        {
+            SceneManager.LoadScene("titleCard");
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.transform.tag == "mover")
         {
             transform.parent = collision.transform;
         }
+        else
+        {
+            Debug.Log(collision.gameObject.name);
+        }
 
         if(collision.transform.tag == "bullet")
         {
             //you got hit
+            transform.position = startPos.position;
         }
     }
 
@@ -81,6 +95,14 @@ public class PlayerPlatform : MonoBehaviour {
         if(collision.transform.tag == "mover")
         {
             transform.parent = null;
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if(collision.transform.tag == "mover")
+        {
+            transform.parent = collision.transform;
         }
     }
 }

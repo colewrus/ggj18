@@ -52,11 +52,17 @@ public class GameController : MonoBehaviour {
         else
         {
             timerLabel.text = "You Made it to next Level prepare your soul!";
-
+            StartCoroutine(SceneChange(2));
             //Switch Scene here
         }
        
 
-        
+       
+    }
+
+    IEnumerator SceneChange(float t)
+    {
+        yield return new WaitForSeconds(t);
+        SceneManager.LoadScene("platformTest");
     }
 }
