@@ -9,7 +9,12 @@ public class GameController : MonoBehaviour {
     public static GameController SharedInstance;
 
     public Text scoreLabel;
+    public Text timerLabel;
     private int packets = 10;
+
+    public float startTime = 20f;
+
+    public float scrollSpeed = -1.5f;
 
     void Awake()
     {
@@ -22,13 +27,36 @@ public class GameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        GameCountdown();
+        
+
+        if(packets <= 0)
+        {
+            //Game over 
+        }
+    }
 
 
     public void DamagePlayer(int damage)
     {
         packets -= damage;
         scoreLabel.text = "Packets: " + packets;
+    }
+
+    public void GameCountdown()
+    {
+        if (!(startTime <= 0)){
+            startTime -= Time.deltaTime;
+            timerLabel.text = "Timer: " + Mathf.RoundToInt(startTime);
+        }
+        else
+        {
+            timerLabel.text = "You Made it to next Level prepare your soul!";
+
+            //Switch Scene here
+        }
+       
+
+        
     }
 }

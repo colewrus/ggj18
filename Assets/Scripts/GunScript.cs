@@ -18,7 +18,7 @@ public class GunScript : MonoBehaviour {
             tick += 1 * Time.deltaTime;
         }
         else{
-            Instantiate(bullet, transform.position, Quaternion.identity);
+            Instantiate(bullet, transform.position, transform.rotation);
             tick = 0;
         }
 
@@ -27,7 +27,6 @@ public class GunScript : MonoBehaviour {
 
 
     void MoveSpawn(float randomNum){
-            transform.position = new Vector3(11.5f, randomNum, 0);
-        Debug.Log(Random.Range(-11, 11));
+            transform.position = new Vector3(11.5f, randomNum, 0);        
     }
 }
