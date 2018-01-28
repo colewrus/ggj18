@@ -9,26 +9,32 @@ public class PlatformClass
     public GameObject obj;
 }
 
+[System.Serializable]
+public class TrapClass
+{
+    public bool fire;
+    public GameObject obj;
+    public GameObject bullet;
+}
+
 
 public class Platform_manager : MonoBehaviour {
 
 
     public List<PlatformClass> PlatformList = new List<PlatformClass>();
-    Animator ani;
+    
 
     public float timer;
-    public float tick;
+    float tick;
 
+    public float trapTimer;
+    float trapTick;
 
 	// Use this for initialization
 	void Start () {
          
     
-        for (int i = 0; i < PlatformList.Count; i++)
-        {
-
-        }
-        
+       
     }
 	
 	// Update is called once per frame

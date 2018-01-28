@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerPlatform : MonoBehaviour {
 
+    public enum PlatformType { disappear, trap}
+
+    public PlatformType myType;
     public Transform deathTransform;
     public Transform startPos;
 
