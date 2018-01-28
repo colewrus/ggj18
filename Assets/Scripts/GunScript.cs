@@ -18,7 +18,7 @@ public class GunScript : MonoBehaviour {
             tick += 1 * Time.deltaTime;
         }
         else{
-            Instantiate(bullet, transform.position, Quaternion.identity);
+            Instantiate(bullet, transform.position, transform.rotation);
             tick = 0;
         }
 

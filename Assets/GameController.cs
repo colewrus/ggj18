@@ -14,6 +14,8 @@ public class GameController : MonoBehaviour {
 
     public float startTime = 20f;
 
+    public float scrollSpeed = -1.5f;
+
     void Awake()
     {
         SharedInstance = this;
@@ -26,7 +28,12 @@ public class GameController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         GameCountdown();
-        //Debug.Log(Mathf.RoundToInt(startTime));
+        
+
+        if(packets <= 0)
+        {
+            //Game over 
+        }
     }
 
 
