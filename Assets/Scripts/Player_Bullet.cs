@@ -27,4 +27,21 @@ public class Player_Bullet : MonoBehaviour {
 
         rb.velocity = new Vector2(horiz, vert) * speed;
     }
+
+    private void OnTriggerEnter2D(Collider2D hit) {
+        
+
+        //Lets see if it gets hit by a 
+
+        if(hit.gameObject.tag == "bullet")
+        {
+            Debug.Log("You were hit!");
+
+            //Now we need to do some magic
+            hit.gameObject.SetActive(false);
+
+            //Decrease packets by 1
+            GameController.SharedInstance.DamagePlayer(1);
+        }
+    }
 }
